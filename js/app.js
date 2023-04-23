@@ -57,11 +57,28 @@ function clientsCarousel() {
     });
 }
 
+function initYandexMap() {
+    let event_status = false;
+    ["mouseover", "click", "scroll"].forEach(function(event) {
+        window.addEventListener(event, function() {
+            if(!event_status) {
+                let mapContainer = document.querySelector(".index_map");
+                mapContainer.innerHTML = `<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af906be902eeaf0f692377dda911a4dec404bf7715acc3070c84ad38bb3b704fc&amp;source=constructor" width="100%" height="494px" frameborder="0"></iframe>`;
+                event_status = true;
+            }
+        }, {
+            once: true
+        });
+    });
+}
+
+
 $(function() {
 
     indexSliderInit();
     carouselInit();
     clientsCarousel();
+    initYandexMap();
 
     let changeLang = '.change_lang';
     let langList = '.lang_list';
@@ -113,7 +130,5 @@ $(function() {
         //$('.question_item .answer').not($(this).next()).stop(true).slideUp();
         $(this).toggleClass('active').next().stop(true).slideToggle();
     });
-
-
 
 });
