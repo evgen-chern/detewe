@@ -8,7 +8,6 @@ function indexSliderInit(){
         item: 1,
         loop: false,
         controls: false,
-        dots: false,
         speed: 800,
         vertical: vertical,
         verticalHeight:861,
@@ -22,6 +21,18 @@ function indexSliderInit(){
                 }
             },
         ],
+    });
+}
+
+function seminarSliderInit(){
+    let sliderSeminar = $('.seminar_slider');
+    sliderSeminar.lightSlider({
+        addClass: 'slider_seminar',
+        item: 1,
+        loop: false,
+        controls: false,
+        speed: 600,
+        slideMargin: 0,
     });
 }
 
@@ -79,6 +90,8 @@ $(function() {
     carouselInit();
     clientsCarousel();
     initYandexMap();
+
+    seminarSliderInit();
 
     let changeLang = '.change_lang';
     let langList = '.lang_list';
