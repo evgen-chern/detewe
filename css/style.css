@@ -4147,6 +4147,72 @@ body.compensate-for-scrollbar {
   padding: 170px 0 130px 0;
 }
 
+.wrapper .solutions-page .title_h2.left_txt {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.wrapper .solutions-page .link,
+.wrapper .solutions-page .blue_link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 17px 25px;
+  font-family: Generator, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 19px;
+  border: 2px solid #3265B0;
+  color: #000;
+  border-radius: 5px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.wrapper .solutions-page .link:hover,
+.wrapper .solutions-page .blue_link:hover {
+  background: #3265b0;
+  color: #fff;
+}
+
+.wrapper .solutions-page .blue_link {
+  background: #3265b0;
+  color: #fff;
+}
+
+.wrapper .solutions-page .blue_link:hover {
+  background: unset;
+  color: #3265b0;
+}
+
+.wrapper .solutions-page .video_link {
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+}
+
+.wrapper .solutions-page .video_link img {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper .solutions-page .video_link:hover img {
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.wrapper .solutions-page .text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 30px 0;
+}
+
 .wrapper .solutions-page .sub_title {
   text-align: center;
   font-size: 20px;
@@ -4304,6 +4370,12 @@ body.compensate-for-scrollbar {
     margin-top: 25px;
     font-size: 22px;
     line-height: 28px;
+  }
+
+  .wrapper .solutions-page .text {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 20px 0;
   }
 }
 
@@ -4991,6 +5063,17 @@ body.compensate-for-scrollbar {
     padding: 85px 0 65px 0;
   }
 
+  .wrapper .solutions-page .title_h2.left_txt {
+    margin-bottom: 15px;
+  }
+
+  .wrapper .solutions-page .link,
+  .wrapper .solutions-page .blue_link {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 15px 22px;
+  }
+
   .wrapper .solutions-page .sub_title {
     font-size: 16px;
   }
@@ -5196,6 +5279,11 @@ body.compensate-for-scrollbar {
 
   .wrapper .about_us-page .certificates .cert-slider {
     max-height: 410px;
+  }
+
+  .wrapper .solutions-page .text {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .wrapper .solutions-page .solutions_slider {

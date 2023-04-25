@@ -126,6 +126,14 @@ $(function() {
     certSliderInit();
     solutionSliderInit();
 
+    $('[data-fancybox="inform_video"]').fancybox({
+        buttons: [
+            "close"
+        ],
+        loop: false,
+        protect: true
+    });
+
     let changeLang = '.change_lang';
     let langList = '.lang_list';
     let dropItem = '.dropdown_item';
