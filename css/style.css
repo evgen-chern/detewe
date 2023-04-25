@@ -4153,6 +4153,73 @@ body.compensate-for-scrollbar {
   margin-top: 15px;
 }
 
+.wrapper .solutions-page .right_side {
+  width: 63%;
+  margin-left: 40px;
+}
+
+.wrapper .solutions-page .solutions_slider {
+  max-height: 560px;
+  overflow: hidden;
+}
+
+.wrapper .solutions-page .solutions_slider img {
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+}
+
+.wrapper .solutions-page .slider_sol {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper .solutions-page .slider_sol .lslide {
+  padding: 0 70px;
+}
+
+.wrapper .solutions-page .slider_sol .lSAction {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .solutions-page .slider_sol .lSAction li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.wrapper .solutions-page .slider_sol .lSAction li a {
+  cursor: pointer;
+  display: block;
+  width: 59px !important;
+  height: 59px !important;
+  font-size: 40px;
+  font-weight: 500;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 11px 18px;
+}
+
+.wrapper .solutions-page .solutions_wrapper.second {
+  padding: 0 0 80px 0;
+}
+
+.wrapper .solutions-page .left {
+  margin-left: 0;
+  margin-right: 40px;
+}
+
 @media all and (min-width: 1279px) {
   .wrapper main .index_slider .right__slider_wrap {
     display: block;
@@ -4927,6 +4994,33 @@ body.compensate-for-scrollbar {
   .wrapper .solutions-page .sub_title {
     font-size: 16px;
   }
+
+  .wrapper .solutions-page .right_side {
+    margin-left: 20px;
+  }
+
+  .wrapper .solutions-page .solutions_slider {
+    max-height: 410px;
+  }
+
+  .wrapper .solutions-page .slider_sol .lslide {
+    padding: 0 50px;
+  }
+
+  .wrapper .solutions-page .slider_sol .lSAction li a {
+    font-size: 28px;
+    padding: 5px 12px;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .wrapper .solutions-page .solutions_wrapper.second {
+    padding: 0 0 40px 0;
+  }
+
+  .wrapper .solutions-page .left {
+    margin-right: 30px;
+  }
 }
 
 @media all and (max-width: 1023px) {
@@ -5102,6 +5196,10 @@ body.compensate-for-scrollbar {
 
   .wrapper .about_us-page .certificates .cert-slider {
     max-height: 410px;
+  }
+
+  .wrapper .solutions-page .solutions_slider {
+    max-height: 310px;
   }
 }
 
@@ -5501,6 +5599,12 @@ body.compensate-for-scrollbar {
 
   .wrapper .about_us-page .contacts .ways .description {
     margin-left: 0;
+  }
+
+  .wrapper .solutions-page .right_side {
+    margin-left: 0;
+    margin-bottom: 20px;
+    width: 100%;
   }
 }
 

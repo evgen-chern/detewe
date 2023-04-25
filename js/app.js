@@ -51,6 +51,21 @@ function certSliderInit(){
     });
 }
 
+function solutionSliderInit(){
+    let sliderSolution = $('.solutions_slider');
+    sliderSolution.lightSlider({
+        addClass: 'slider_sol',
+        item: 1,
+        loop: false,
+        controls: true,
+        prevHtml: '<',
+        nextHtml: '>',
+        pager: false,
+        speed: 600,
+        slideMargin: 0,
+    });
+}
+
 
 function carouselInit() {
     let owlCarousel = $('.right__slider_wrap');
@@ -109,6 +124,7 @@ $(function() {
 
     seminarSliderInit();
     certSliderInit();
+    solutionSliderInit();
 
     let changeLang = '.change_lang';
     let langList = '.lang_list';
